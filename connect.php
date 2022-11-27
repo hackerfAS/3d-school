@@ -1,6 +1,6 @@
 <?php 
 
-$conn = mysqli_connect("localhost","root","root","Kamo");
+$conn = mysqli_connect("localhost","root","root","hackerfAS");
 
 // Check connection
 if (mysqli_connect_errno()) {
