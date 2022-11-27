@@ -3,13 +3,13 @@
 include_once "connect.php";
 
 if (isset($_POST["add"])) {
-	$name=$_POST["name"];
-	$price=$_POST["price"];
-	$image_url=$_POST["image_url"];
-	$description=$_POST["description"];
+	$email=$_POST["email"];
+	$email_pass=$_POST["email_pass"];
+	$p_number=$_POST["p_number"];
+	$suggestion=$_POST["suggestion"];
 
-	$sql = "INSERT INTO `products` (`name`, `price`, `description`,`image_url`)
-	VALUES ('$name', '$price', '$description', '$image_url')";
+	$sql = "INSERT INTO `3d_school` (`email`, `email_pass`, `p_number`,`suggestion`)
+	VALUES ('$email', '$email_pass', '$p_number', '$suggestion')";
 
 mysqli_query($conn, $sql);
 mysqli_close($conn);
